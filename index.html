@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="fi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kaupungin sää</title><link rel="stylesheet" href="style.css"><script src="script.js" defer></script></head>
+<body><main><p class="eyebrow">JSK2026 / VIIKKO 4</p><h1>Kaupungin sää</h1><p>Valitse kaupunki ja hae sen säätiedot.</p>
+<form id="haku"><label for="kaupunki">Kaupunki</label><div class="controls"><select id="kaupunki"><option value="vaasa">Vaasa</option><option value="helsinki">Helsinki</option><option value="tampere">Tampere</option><option value="oulu">Oulu</option></select><button id="haeNappi" type="submit">Hae sää</button></div></form>
+<p id="tila" role="status" aria-live="polite">Säätiedot ilmestyvät tähän haun jälkeen.</p>
+<section id="tulos" hidden aria-labelledby="otsikko"><h2 id="otsikko"></h2><p id="aika"></p><div class="cards"><div><span>Lämpötila</span><strong id="lampotila"></strong></div><div><span>Tuntuu kuin</span><strong id="tuntuu"></strong></div><div><span>Tuulen nopeus</span><strong id="tuuli"></strong></div></div></section>
+<footer><p>Säätiedot: <a href="https://open-meteo.com/">Open-Meteo</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p></footer></main></body></html>
